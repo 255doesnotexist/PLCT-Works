@@ -42,10 +42,28 @@
 ## 其他内容
 
 1. 为lintestor准备了技术分享报告
-2. 调研了autopkgtest工具的使用
-3. 在Infra提供的设施上拉取部署了RISC-V Debian Sid镜像并展开开发工作
-4. 在QEMU RISC-V Debian Sid环境下手动测试了nano_7.2-1+deb12u1软件包
-5. 观察到有人曾在16GB版本BPI-F3上跑通ChatGLM2-6B Q4量化版ONNX模型,写了简单展望
+2. 在Infra提供的设施上拉取部署了RISC-V Debian Sid镜像并展开开发工作
+
+```bash
+ezra@debian:~/dqib_riscv64-virt$ ls
+boot.sh      nano-7.2                          nano_7.2.orig.tar.xz.asc  ssh_user_rsa_key
+image.qcow2  nano_7.2-1+deb12u1.debian.tar.xz  readme.txt
+initrd       nano_7.2-1+deb12u1.dsc            ssh_user_ecdsa_key
+kernel       nano_7.2.orig.tar.xz              ssh_user_ed25519_key
+ezra@debian:~/dqib_riscv64-virt$ cat boot.sh 
+qemu-system-riscv64 -machine virt -m 1G -smp 8 -cpu rv64 \
+-device virtio-blk-device,drive=hd \
+-drive file=image.qcow2,if=none,id=hd \
+-device virtio-net-device,netdev=net \
+-netdev user,id=net,hostfwd=tcp::2222-:22 \
+-bios /usr/lib/riscv64-linux-gnu/opensbi/generic/fw_jump.elf \
+-kernel /usr/lib/u-boot/qemu-riscv64_smode/uboot.elf \
+-object rng-random,filename=/dev/urandom,id=rng \
+-device virtio-rng-device,rng=rng \
+-nographic -append "root=LABEL=rootfs console=ttyS0"
+```
+
+3. 观察到有人曾在16GB版本BPI-F3上跑通ChatGLM2-6B Q4量化版ONNX模型,写了简单展望
 
 ## 未来计划
 
