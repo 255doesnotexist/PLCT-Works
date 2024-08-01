@@ -1,4 +1,4 @@
-# month 1
+# month 0
 
 记录本月产出。
 
@@ -41,7 +41,7 @@
 
 ## 其他内容
 
-1. 为lintestor准备了技术分享报告
+1. [为lintestor准备了技术分享报告](https://github.com/255doesnotexist/PLCT-Works/blob/main/outputs/month0/week3/RuyiSDK%20%E6%94%AF%E6%8C%81%E7%9F%A9%E9%98%B5%20RISC-V%20%E8%BD%AF%E4%BB%B6%E5%8C%85%E6%94%AF%E6%8C%81%E6%83%85%E5%86%B5%E7%9F%A9%E9%98%B5%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7%E6%80%BB%E7%BB%93.pptx)
 2. 在Infra提供的设施上拉取部署了RISC-V Debian Sid镜像并展开开发工作
 
 ```bash
