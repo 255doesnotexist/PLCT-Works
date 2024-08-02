@@ -5,7 +5,7 @@
 因为是跨架构模拟，需要参照 [Debian Wiki](https://wiki.debian.org/QEMU) 安装 qemu system 本体（GUI 包可忽略）。
 
 ```sh
-sudo apt install qemu-utils qemu-system-x86 qemu-system-gui
+sudo apt install qemu-utils qemu-system-x86 qemu-system-gui qemu-system-misc
 ```
 
 然后前往 [Debian Quick Image Baker pre-baked images](https://people.debian.org/~gio/dqib/) 可领取预烘焙好的 rv64 Debian Sid 一枚。（自己有空闲也可以从头开始编译XD）
@@ -39,3 +39,17 @@ chmod +x boot.sh
 最后，执行 ```./boot.sh``` 即可启动新鲜出炉的 RISC-V 架构 Debian。这同时还会映射 2222 端口到本机，通过 SSH 等方式进行访问也很方便。
 
 而后，可以通过克隆测试包存储库、执行测试脚本的方式，在 QEMU 中仿真测试各类 RISC-V Debian 软件包的情况。
+
+如执行 boot.sh 时提示找不到 RISC-V BIOS：
+（此问题在 Ubuntu 24.04 LTS WSL 上出现。已解决。）
+
+```sh
+qemu-system-riscv64: Unable to find the RISC-V BIOS "/usr/lib/riscv64-linux-gnu/opensbi/generic/fw_jump.elf"
+```
+
+请尝试安装 opensbi 和 u-boot-qemu 包：
+
+```sh
+sudo apt-get install opensbi u-boot-qemu
+```
+
