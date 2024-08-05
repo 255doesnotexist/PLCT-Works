@@ -13,8 +13,15 @@ lintestor 主仓库代码部分：
 4. （上一条的意思是可选用哪个基本配置文件启动测试、仅执行测试或仅执行生成表格等不同模块。见 [README.md](https://github.com/255doesnotexist/lintestor/commit/1c0e7309998be77cc19e1a7c1e1d0e49fb117c68#diff-b335630551682c19a781afebcf4d07bf978fb1f8ac04c6bf87428ed5106870f5)）
 5. 增加了 [Debian](https://github.com/255doesnotexist/lintestor/commit/a0f63eec825db4adbb0c5d42c3cf582b55799676) [QEMU 虚拟机的自动启动/停止](https://github.com/255doesnotexist/lintestor/commit/e8d1c419e39cfa3b15acffb08e0e3253710434c2)。现在lintestor 能自动管理测试环境的启停了。
 6. 删除[一些未使用的导入](https://github.com/255doesnotexist/lintestor/commit/7bae275969d7321d06fe6307613398dc453f1be8)、简单拆分了 [main.rs](https://github.com/255doesnotexist/lintestor/commit/1c0e7309998be77cc19e1a7c1e1d0e49fb117c68#diff-42cb6807ad74b3e201c5a7ca98b911c5fa08380e942be6e4ac5807f8377f87fc)。
+7. [GitHub Actions 自动测试已经可用](https://github.com/255doesnotexist/lintestor/actions/runs/10212089762)。
 
 Debian 测试脚本部分：
 
 1. 修复了 [Apache](https://github.com/255doesnotexist/lintestor/commit/64110c85b2a07d5f81feb1684f6e1497c3a83465) 和 [HAProxy](https://github.com/255doesnotexist/lintestor/commit/c443263d8c2c60c7804eafe3dddb43e0652ecacf) 的测试逻辑
 2. 移除、跳过了 [Docker](https://github.com/255doesnotexist/lintestor/commit/15699609255f8f33ef7695821eb1dfd4fed62f29) 自动化测试（可能意义不大，建议基于实机反馈修改 report.json）
+
+未来计划
+
+1. 填充其他的一些测试脚本。
+2. 在 infra 上搭建 GitHub Actions Runner 避开 CI 任务的时间限制、性能限制？
+3. 修改代码以适配 lintestor 运行在 RISC-V 实机的情况。此时不开 QEMU 而是直接执行测试。
