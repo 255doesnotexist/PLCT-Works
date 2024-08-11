@@ -1,4 +1,4 @@
-## pre week
+## pre week (prior to 0709)
 
 本周工作
 
