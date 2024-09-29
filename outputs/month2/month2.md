@@ -46,6 +46,10 @@
 4. [实现了将测试环境信息独立到表格下方的功能 (#21)](https://github.com/255doesnotexist/lintestor/issues/21)
 5. [修复了CI上因Metadata机制执行失败的问题 (#20)](https://github.com/255doesnotexist/lintestor/issues/20)
 6. 部分解决了 [CI 自动发版 (nightly?) (#14)](https://github.com/255doesnotexist/lintestor/issues/14)
+7. [解决了如果将remote类型的测试也置于仓库中，会造成连接验证信息泄露的问题 (#12)](https://github.com/255doesnotexist/lintestor/issues/12)
+8. [完成了补全Bianbu Linux的测试脚本 (#11)](https://github.com/255doesnotexist/lintestor/issues/11)
+9. [实现了为不同包的元数据提供灵活的配置文件 (#8)](https://github.com/255doesnotexist/lintestor/issues/8)
+10. [完成了测试时动态获取包相关元数据的机制 (#6)](https://github.com/255doesnotexist/lintestor/issues/6)
 
 ## 其他内容
 
