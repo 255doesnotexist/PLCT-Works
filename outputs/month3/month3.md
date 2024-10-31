@@ -23,8 +23,8 @@
    
    - 代码重构和组织:
      - [将配置和测试移动到 dirty 分支](https://github.com/255doesnotexist/lintestor/commit/0d58d0d)
-     - [53c93e7][4f18892] 添加更多注释说明
      - [应用自动格式化](https://github.com/255doesnotexist/lintestor/commit/19b3045)
+     - [添加更多注释说明文档](https://github.com/255doesnotexist/lintestor/commit/4f18892)
 
    - 测试系统改进:
      - [为单元测试添加 CI workflow](https://github.com/255doesnotexist/lintestor/commit/b76c25c)
