@@ -16,6 +16,7 @@
 ### 2. boardtest server API 文档和加了点功能
 - [7fde519](https://github.com/255doesnotexist/boardtest/commit/7fde519)
 - 实现远程测试和开发板配置写入功能（需要 token）
+- /write_test /write_config
 
 - [7c83231](https://github.com/255doesnotexist/boardtest/commit/7c83231)
 - 添加测试和开发板配置覆盖标志
