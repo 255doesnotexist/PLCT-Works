@@ -40,6 +40,8 @@
   - 新增 `via_boardtest` 标志
   - 集成 BoardtestRunner 到测试流程
 
+### 4. 两条玄铁视频评论
+
 ### 下周可能计划：
 - （已接）Eulaceura 的 (Pioneer / Lichee4A) Chromium 测试报告
 - （然而可用的 Lichee4A 正被更高优先级的数据库测试任务占着，Pioneer 再看看，Meles 倒是可用）
