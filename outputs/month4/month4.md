@@ -7,7 +7,7 @@
 ### lintestor
 
 #### CI/CD 系统改进
-- [Fedora 测试脚本 & CIFAR](https://github.com/255doesnotexist/lintestor/commit/0977b319bf0b2bd6c1ed192ec6c4ac42baea7a4b)
+- [Fedora 测试脚本](https://github.com/255doesnotexist/lintestor/commit/0977b319bf0b2bd6c1ed192ec6c4ac42baea7a4b)
   - apache、nodejs、postgresql 等 30 余个软件包在 fedora 下的简单可用性测试脚本
   - 基于现有 Debian 测试脚本进行适配
   - 包括软件包元数据脚本迁移
