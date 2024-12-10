@@ -1,13 +1,13 @@
 # week 0 (20241202 - 20241208)
 
-## 1. 持续集成与测试环境
+## 1. CI 和测试环境和 lintestor
 - [344c5ea](https://github.com/255doesnotexist/lintestor/commit/344c5ea) 修了 Fedora VM 测试环境现在可用了
 - [c3bef23](https://github.com/255doesnotexist/lintestor/commit/c3bef23) CI(Debian): 修复类似riscv-software-src/opensbi/issues/372 相关问题
   - 使用 `fw_jump.bin` 替代 `.elf`，避免 ROM 区域重叠问题
 - [52266c0](https://github.com/255doesnotexist/lintestor/commit/) 修复 QEMU 脚本中意外的文件/目录不存在问题
   - 在脚本路径前追加变量工作目录
 
-## 2. 测试环境脚本
+## 2. dirty 分支测试环境脚本
 - [753d424](https://github.com/255doesnotexist/lintestor/commit/753d424) Fedora 环境： `boot` 和 `init` 简单分离了一下功能
   - `boot.sh` 仅负责启动虚拟机
   - 初始化操作（下载、解压镜像、安装依赖、配置 SSH）移至 `init.sh`
