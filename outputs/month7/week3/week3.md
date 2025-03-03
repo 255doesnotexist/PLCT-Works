@@ -26,3 +26,5 @@
 - [chore(deps): bump serde_json from 1.0.137 to 1.0.139](https://github.com/255doesnotexist/lintestor/commit/54c0d1d28976f9eca064e2c7471e76efca0c3009)
 
 7. 最新的 [summary.md](https://github.com/255doesnotexist/lintestor/blob/464c8dd2a8d6d26f7170478dcfd4146965c084ee/summary.md) 包测试结果矩阵。
+
+8. 等待 CI 结果时帮着修改了某工具链情况表格中某些开发板支持 OS 的部分。（参考支持矩阵填写）
